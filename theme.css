@@ -1,0 +1,89 @@
+pre {
+  background: #2d3436;
+  border-radius: 5px;
+  white-space: pre-wrap
+}
+
+code {
+  padding: 15px !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: none !important;
+}
+
+h1 {
+  font-size: 5rem !important;
+}
+
+p, ul, ol, li,  dl {
+  text-align: left;
+}
+
+ol, ul {
+  display: block !important;
+}
+
+img {
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.reveal pre {
+  margin: 20px 0;
+}
+
+.greentext {
+  color: #27ae60;
+}
+
+.bluetext {
+  color: #3498db;
+}
+
+.redtext {
+  color: #c0392b;
+}
+
+.purpletext {
+  color: #8e44ad;
+}
+
+td, th, table {
+  border: 1px solid #000;
+  text-align: left !important;
+}
+
+th {
+  background: #636e72;
+  color: #fff;  
+}
+
+
+/* .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+} */
+
+.terminal {
+  background: #011627;
+  color: #FFF;
+  text-align: left;
+  font-family: "fira code", monospace;
+  white-space: pre-wrap;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+.terminal__prompt {
+  font-style: italic;
+  color: rgb(127,219,202);
+}
+
+.terminal__command {
+  color: rgb(173,219,103);
+}
+
+.terminal__file{
+  color: rgb(236,196,141);
+}

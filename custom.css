@@ -1,0 +1,64 @@
+.info {
+  margin-bottom: 10px;
+  border-radius: 2px;
+  color: #000;
+  border: 1px solid #78e08f;
+  background-color: #b8e994;
+  padding: 5px;
+}
+
+.info::before {
+  content: "Information";
+  font-weight: bold;
+  display: block;
+  background-color: #78e08f;
+  padding: 5px;
+  color: #FFF;
+  margin: -5px;
+}
+
+.tips {
+  margin-bottom: 10px;
+  border-radius: 2px;
+  color: #000;
+  border: 1px solid #f6b93b;
+  background-color: #fad390;
+  padding: 5px;
+}
+
+.tips::before {
+  content: "Tips";
+  font-weight: bold;
+  display: block;
+  background-color: #f6b93b;
+  padding: 5px;
+  color: #FFF;
+  margin: -5px;
+}
+
+.varning {
+  margin-bottom: 10px;
+  border-radius: 2px;
+  color: #000;
+  border: 1px solid #eb2f06;
+  background-color: #df9388;
+  padding: 5px;
+}
+
+.varning::before {
+  content: "Varning!";
+  font-weight: bold;
+  display: block;
+  background-color: #eb2f06;
+  padding: 5px;
+  color: #FFF;
+  margin: -5px;
+}
+
+.page {
+  page-break-after: always;
+}
+
+/* li {
+  margin-bottom: 20px;
+} */
