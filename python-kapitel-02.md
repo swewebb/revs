@@ -8,12 +8,12 @@
 
 Utskrift görs med `print(…) `
 
-Kommandon i Python är **case sensitive**
-
 ```python
 >>> print('Hello World')
 Hello World
 ```
+
+Kommandon i Python är **case sensitive**
 
 ---
 
@@ -23,9 +23,13 @@ Hello World
 
 All programmering använder variabler, ungefär som vi använder x och y i ekvationer i matematiken
 
-I matematiken: om x är 4 så är verkligen x = 4. 
+--
 
-I programmering är variabeln x istället en referens – en form av pekare till en specifik minnesadress – som råkar ha värdet 4.
+I matematiken: om **x** är **4** så är verkligen **x = 4**. 
+
+--
+
+I programmering är variabeln **x** istället en referens – en form av pekare till en specifik minnesadress – som råkar ha värdet 4.
 
 --
 
@@ -69,9 +73,6 @@ Variablerna deklareras i och med att vi börjar använda dem
 Variabler får kallas vad som helst, men får inte innehålla några aritmetiska operatorer och inte heller bestå av reserverade ord (reserverade ord kan ingå i namnet) och inte börja på siffror
 
 Variabelnamn får innehåll å, ä, ö. Men det är snyggast att undvika och använda svengelska uttryck.
-
-TODO: https://www.python.org/dev/peps/pep-0008/
-TODO: https://google.github.io/styleguide/pyguide.html#316-naming
 
 ---
 
@@ -123,7 +124,7 @@ Heltalsdivision, ger "hela" antalet ggr som nämnaren ryms i täljaren: //
 >>> print(21 // 8)
 2
 
->>> print(21 // 8)
+>>> print(21 // -8)
 -3
 ```
 
@@ -168,13 +169,11 @@ Python tar dock mer minne om det behövs (gränsen sätts vid internminnets stor
 
 Flyttal kodas i minnet som en exponentdel och mantissa, ungefär som mycket stora eller små tal visas på en räknare. 
 
-Med 8 byte får vi flyttal med ett relativt fel i aritmetiken på c:a 10^-16. 
-
-Flyttal visas mellan 2^-4 och 2^15 i som vanligt, annars i grundpotensform
-
 --
 
-Python har inte statisk typkontroll, vilket gör att vi inte behöver ange vilken typ av tal vi arbetar med innan vi börjar göra operationer. I andra språk behöver man explicit typa sina variabler, så icke i Python
+Python har inte statisk typkontroll, vilket gör att vi inte behöver ange vilken typ av tal vi arbetar med innan vi börjar göra operationer. 
+
+I andra språk behöver man explicit typa sina variabler, så icke i Python
 
 Aritmetiska operationer kan blanda flyttal och heltal, men svaret blir då ett flyttal (ett flyttal som råkar vara ett heltal anges med en decimalnolla)
 
@@ -201,7 +200,7 @@ Emellanåt vill man omvandla heltal till flyttal och tvärtom. Då finns inbyggd
 
 --
 
-`float(x)` omvandlar heltalet **x** till ett flyttal
+**`float(x)`** omvandlar heltalet **x** till ett flyttal
 
 ```python
 >>> float(4)
@@ -222,7 +221,7 @@ Emellanåt vill man omvandla heltal till flyttal och tvärtom. Då finns inbyggd
 
 --
 
-`int(x)` omvandlar flyttalet **x** till ett heltal via trunkering (decimalerna skärs bort, helt enkelt – trunkering används också vid heltalsdivision)
+**`int(x)`** omvandlar flyttalet **x** till ett heltal via trunkering (decimalerna skärs bort, helt enkelt – trunkering används också vid heltalsdivision)
 
 ```python
 >>> a = 6.2
@@ -270,8 +269,6 @@ Teckensträngar är en följd av tecken, och anges i Python av citationstecken
 
 Det är okej med enkla eller dubbla citationstecken
 
-Med trippla citationstecken kan man ha texter som spänner över flera rader i källkoden
-
 --
 
 ```python
@@ -280,6 +277,13 @@ Kalle Kanin
 
 >>> print('Kalle Kanin')
 Kalle Kanin
+```
+
+--
+
+Med trippla citationstecken kan man ha texter som spänner över flera rader i källkoden
+
+```python
 
 >>> print("""en lång sträng som går
 ... över flera
@@ -298,9 +302,23 @@ Vill man räkna med teckensträngar som innehåller siffror måste dessa konvert
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 TypeError: can only concatenate str (not "int") to str
+```
 
+--
+
+
+```python
 >>> print(int('123') + 123)
 246
+```
+
+--
+
+```python
+>>> print(int('123kaka') + 123)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: invalid literal for int() with base 10: '123kaka'
 ```
 
 --
