@@ -107,13 +107,15 @@ Obs! Radbrytningar (**&lt;br&gt;**) ska **inte** användas för styckesindelning
 &nbsp;
 
 ```html
-<h1>Hela <b>rubriken</b></h1>
+<h1><b>Rubriken</b></h1>
 <p>Vi <b>testar</b></p>
 ```
 
 --
 
 ![fet](images/fet.png)
+
+**Observera!** Rubriker har fet stil som standard... dvs det är onödigt att lägga till b-taggen som i exemplet.
 
 ---
 
