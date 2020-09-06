@@ -59,6 +59,19 @@ I de uppgifter som innehåller tabeller lägger du till följande, det vill säg
 
 --
 
+```css
+table {
+  border-collapse: collapse;
+}
+td, th {
+  border: 1px solid #000;
+}
+```
+
+Använder du **codepen** så kopierar du in följande i rutan CSS.
+
+--
+
 ![1x1-bd](images/1x1-bd.png)
 
 ---

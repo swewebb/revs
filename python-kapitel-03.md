@@ -10,7 +10,7 @@ Vi har hittils arbetat med att skriva och köra kod i tolkläge.
 
 Idag kommer vi att introducera användandet av en IDE istället.
 
-Kom ihåg! Filändelsen är .py
+**Kom ihåg!** Filändelsen är `.py`
 
 ---
 
@@ -23,10 +23,22 @@ Kom ihåg! Filändelsen är .py
 
 # Fråga efter namnet och skriv ut hälsning
 namn = input("Vad heter du?\n")
-print("Hej, " + namn + ", trevligt att råkas!")
+print("Hej,", namn ,", trevligt att råkas!")
 ```
 
 --
+
+![bild](images/python-03-ex1-komma.png) 
+
+--
+
+```python
+# Mitt första program
+
+# Fråga efter namnet och skriv ut hälsning
+namn = input("Vad heter du?\n")
+print("Hej, " + namn + ", trevligt att råkas!")
+```
 
 ![bild](images/python-03-ex1.png)
 
@@ -91,26 +103,50 @@ Här tar vi emot input:arna och int:ar dessa för att sedan multiplicera talen o
 
 För att koden skall vara debuggbar vill vi inte skriva hur långa rader som helst.
 
+--
+
 En gammal regel säger att rader bör brytas innan 80:e tecknet.
+
+--
 
 Med backslash ’\’ kan man markera att koden fortsätter på nästa rad, men det är inte nödvändigt.
 
+TODO: EXEMPEL
+
+--
+
 Ofta bryter man koden i parameterlistorna till en funktion eller med hjälp av extra (onödiga) parenteser.
 
+TODO: EXEMPEL
+
+--
+
 Med snygg tabbning kommer koden att bli lättläst.
+
+TODO: EXEMPEL
 
 ---
 
 # Kommentarer
 
+--
+
 All välskriven kod är välkommenterad.
+
+--
 
 Kommentarer i ett program har två syften.
 Den som programmerar skall komma ihåg varför denne gjorde på ett visst sätt.
 
+--
+
 Andra som läser koden skall kunna förstå vad koden gör.
 
+--
+
 Kommentarer skall inte vara triviala utan upplysa om väsentliga saker.
+
+--
 
 Bra val på variabelnamn kompletterar kommentarerna.
 
@@ -136,9 +172,15 @@ position -= 1
 
 # Felmeddelanden
 
+--
+
 Innan man avlusat sitt program får man felmeddelanden i Python-tolken.
 
+--
+
 Ofta är det rena syntax-fel som gör att programmet inte startar alls eller också runtime-fel där exekveringen avbryts då fel uppstått.
+
+--
 
 Går vi tillbaka till källkoden står ofta markören i närheten av den rad där felet finns (på eller precis efter).
 
@@ -150,6 +192,12 @@ Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 TypeError: can only concatenate str (not "int") to str
 
+```
+
+--
+
+
+```python
 >>> print(int('123') + 123)
 246
 ```
