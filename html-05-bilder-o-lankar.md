@@ -30,7 +30,7 @@ Den här metoden är det vanligaste.
 Länkar till andra webbplatser
 
 ```html
-<a href="https://www.abc.se/index.html">ABC-klubben</a>
+<a href="https://www.abc.se">ABC-klubben</a>
 ```
 
 **Extern relativ länk.**
