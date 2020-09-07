@@ -26,9 +26,7 @@ namn = input("Vad heter du?\n")
 print("Hej,", namn ,", trevligt att råkas!")
 ```
 
---
-
-![bild](images/python-03-ex1-komma.png) 
+![bild](images/python-03-ex01a.png)
 
 --
 
@@ -40,7 +38,7 @@ namn = input("Vad heter du?\n")
 print("Hej, " + namn + ", trevligt att råkas!")
 ```
 
-![bild](images/python-03-ex1.png)
+![bild](images/python-03-ex01.png)
 
 ---
 
@@ -109,21 +107,19 @@ En gammal regel säger att rader bör brytas innan 80:e tecknet.
 
 --
 
-Med backslash ’\’ kan man markera att koden fortsätter på nästa rad, men det är inte nödvändigt.
+```python
+txt="Här kommer det en lång rad med text... \
+Här kommer det en lång rad med text... \
+Här kommer det en lång rad med text..."
 
-TODO: EXEMPEL
+print(txt)
+```
+
+Med backslash \ kan man markera att koden fortsätter på nästa rad, men det är inte nödvändigt.
 
 --
 
-Ofta bryter man koden i parameterlistorna till en funktion eller med hjälp av extra (onödiga) parenteser.
-
-TODO: EXEMPEL
-
---
-
-Med snygg tabbning kommer koden att bli lättläst.
-
-TODO: EXEMPEL
+![bild](images/python-03-row.png)
 
 ---
 
