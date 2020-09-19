@@ -6,15 +6,19 @@
 
 # CSS
 
+--
+
 Cascading Style Sheet
 
 Formatmallar
 
-Används för att skapa presentation av innehåll, t ex färger, typsnitt och layout$
+Används för att skapa presentation av innehåll, t.ex färger, typsnitt och layout$
 
 ---
 
 # Hur är en CSS-regel uppbyggd?
+
+--
 
 ```css
 selektor {
@@ -36,11 +40,13 @@ p {
 
 # Regler för deklarationers värden
 
+--
+
 Tre huvudgrupper av värden:
 
-* **Ord**, t.ex *font-weight: bold;*
-* **Numeriska värden**, t.ex *font-size: 12px;*
-* **Färgvärden**, t.ex *color: #AABBCC;*
+* **Ord**, t.ex `font-weight: bold;`
+* **Numeriska värden**, t.ex `font-size: 12px;`
+* **Färgvärden**, t.ex `color: #AABBCC;`
 
 ---
 
@@ -99,10 +105,6 @@ h1 {
 ---
 
 # Tre sätt att ange
-
-1. Lokala (inline)
-1. Inbäddade
-1. Länkade
 
 --
 
@@ -185,6 +187,8 @@ Tekniken ni ska använda!
 ---
 
 # Vad innebär cascading?
+
+--
 
 1. Webbläsarens standardformatmall
 1. Användarformatmallen

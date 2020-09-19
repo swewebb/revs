@@ -17,26 +17,26 @@ I många programmeringsspråk används if-konstruktionen för att göra olika va
 
 ---
 
-# If-satsen formellt
+# If-satsen
 
 --
 
 ```python
-if test expression: 
-	statement(s) 
+if test expression:
+	statement(s)
 ```
 
-If-satserna består alltså av if + villkor + kolon, och sedan ett program-block om ett eller flera rader som skrivs med lämpligt indrag (4 tecken är standard).
+If-satserna består alltså av _if + villkor + kolon_, och sedan ett program-block om en eller flera rader som skrivs med lämpligt indrag (4 tecken är standard).
 
-Hela programblocket som hör till if-satsen måste ha samma indrag.
+Hela programblocket som hör till if-satsen **måste** ha samma indrag.
 
 --
 
 ```python
-if test expression: 
+if test expression:
 	statement(s)
 	if other test expression:
-		other statement(s) 
+		other statement(s)
 
 ```
 
@@ -93,9 +93,9 @@ print("This is also always printed.")
 ```python
 num = int(input("Give a number: "))
 
-if num > 0:    
+if num > 0:
 	print(num, "is a positive number.")
-else:	
+else:
 	print(num, "is zero or a negative number.")
 
 print("This is always printed.")
@@ -111,18 +111,18 @@ print("This is always printed.")
 
 ---
 
-# Exempel 3 
+# Exempel 3
 
 --
 
 ```python
 num = int(input("Give a number: "))
 
-if num > 0:    
+if num > 0:
 	print(num, "is a positive number.")
 elif num < 0:
 	print(num, "is a negative number.")
-else:	
+else:
     print(num, "is zero.")
 
 print("This is always printed.")
@@ -204,7 +204,7 @@ num2 = 3
 
 if num1 == num2:
     print('Lika')
-else: 
+else:
     print('Olika')
 
 ```
@@ -226,12 +226,11 @@ else:
 | not      | icke      |
 
 
-Python utvärderar logiska uttryck till **True** eller **False**. 
+Python utvärderar logiska uttryck till **True** eller **False**.
 
 Dessa kan kombineras med logiska operatorerna `and`, `or`, `not`.
 
 Observera att `or`-operatorn returnerar **True** om någon eller båda uttrycken är **True**.
-
 
 ---
 
@@ -245,7 +244,7 @@ num2 = 3
 
 if num1 == 3 and num2 > 0:
     print('Ja')
-else: 
+else:
     print('Nej')
 
 ```
