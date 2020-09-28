@@ -6,7 +6,6 @@
 
 --
 
-All (imperativ) programmering bygger på:
 * Satser (instruktioner i tur och ordning)
 * Val med villkor
 * Iterationer (upprepningar, ”loopar”)
