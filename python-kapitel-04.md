@@ -11,6 +11,8 @@ All (imperativ) programmering bygger på:
 * Val med villkor
 * Iterationer (upprepningar, ”loopar”)
 
+--
+
 Idag tar vi oss an **villkor**
 
 I många programmeringsspråk används if-konstruktionen för att göra olika val, ofta i kombination med olika boolska uttryck och logiska operatorer.
@@ -229,8 +231,6 @@ else:
 Python utvärderar logiska uttryck till **True** eller **False**.
 
 Dessa kan kombineras med logiska operatorerna `and`, `or`, `not`.
-
-Observera att `or`-operatorn returnerar **True** om någon eller båda uttrycken är **True**.
 
 ---
 
