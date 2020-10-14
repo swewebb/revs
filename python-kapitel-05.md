@@ -71,11 +71,19 @@ print('\nUtanför loopen')
 
 **range** är en s.k. itererbar datatyp, liksom listor och dictionaries (som vi ska gå igenom senare i kursen).
 
+--
+
 `range(1, 10)` är 1, 2, 3, 4, 5, 6, 7, 8, 9 (slutvärdet aldrig med)
+
+--
 
 `range(100)` är 0, 1, 2, 3, …, 98, 99 (startvärdet alltid 0 och stegvärdet alltid 1 om utelämnat)
 
+--
+
 `range(0, 100, 2)` är 0, 2, 4, 6, 8, …, 96, 98 (stegvärdet är 2)
+
+--
 
 `range(10, -1, -1)` är 10, 9, 8, 7, …, 2, 1, 0 (stegvärdet är -1)
 
@@ -140,8 +148,6 @@ print('\nUtanför loopen')
 Många `for`-loopar kan skrivas om som `while` och tvärtom.
 
 `While` fortsätter så länge ett givet villkor är uppfyllt.
-
-`for` ger normalt kortare kod, medan `while` ger mer kontroll.
 
 --
 
