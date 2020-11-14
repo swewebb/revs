@@ -12,7 +12,9 @@ Vi har tidigare stött på teckensträngar i Python, dessa är sekvenser av teck
 * `'Kurt'`
 * `"""Kurt över flera rader... så att säga""" `
 
-Strängarna ovan kallas för strängkonstanter eller literaler.
+--
+
+Strängarna ovan kallas för _strängkonstanter_ eller _literaler_.
 
 Mestadels arbetar vi med strängar genom att tilldela dem till en variabel, `name = 'Kurt'`
 
@@ -82,6 +84,8 @@ for char in a:
 
 # Plustecken
 
+--
+
 Plustecken (+) används för att slå ihop strängar
 
 ```python
@@ -97,6 +101,8 @@ print(fullname)
 ---
 
 # Multiplikationstecknet
+
+--
 
 Multiplikationstecknet (*) för att upprepa en sträng
 
@@ -120,7 +126,9 @@ print(lotsofname)
 
 ---
 
-# len(n)
+# Längd
+
+--
 
 `len(n)` ger längden på teckensträngen _n_
 
@@ -136,7 +144,9 @@ print('Du har', length, 'bosktäver i ditt förnamn')
 
 ---
 
-# in
+# Förekomst
+
+--
 
 Med `in` kan man testa förekomsten av ett visst tecken i en sträng
 
@@ -151,8 +161,6 @@ if search in text:
 else:
     print('Finns ej i texten')
 ```
-
---
 
 ![bild](images/python-06-ex8.png)
 
@@ -180,7 +188,9 @@ print(x)
 
 ---
 
-# str(n)
+# Typomvandling
+
+--
 
 `str(tal) `förvandlar en variabels innehåll till en sträng (åt andra hållet använder vi int och float på teckensträngarna)
 
@@ -206,6 +216,8 @@ print('Talet är ' + text)
 ---
 
 # Jämföra strängar
+
+--
 
 Vi kan jämföra strängar med `==` och _!=_
 
@@ -249,6 +261,8 @@ text2 = 'b'
 
 ![bild](images/python-06-ex11b.png)
 
+--
+
 ```python
 text1 = 'b'
 text2 = 'a'
@@ -259,6 +273,8 @@ text2 = 'a'
 ---
 
 # Negativ indexering
+
+--
 
 För att komma åt tecknen från slutet används även negativ indexering, med start från -1
 
@@ -277,6 +293,8 @@ print('Sista bokstaven är', text[-1])
 ---
 
 # Delsträngar
+
+--
 
 Vi kan ta fram delsträngar genom att ange start- och slutindex med kolon emellan, s.k. slicar. Med en tredje parameter anges "steglängd".
 
@@ -343,6 +361,8 @@ print(sliced)
 ---
 
 # Strängmetoder
+
+--
 
 Python har en klass för strängar, och till den hör ett antal metoder som man kan använda via punktnotation.
 
@@ -492,9 +512,13 @@ print(text.count('k'))
 
 Man kan ha en tom sträng, som fortfarande är en sträng
 
+--
+
 Strängar är oföränderliga i Python, dvs man kan INTE byta ut enskilda bokstäver. Förändringar i strängar måste sparas i nya strängar (referensen till den nya strängen kan skriva över den gamla)
 
-I Python är enskilda tecken strängar med längden 1. Dock kan enskilda teckens teckenkod (Unicode) kollas och evalueras med funktionerna ord() och chr()
+--
+
+I Python är enskilda tecken strängar med längden 1. Dock kan enskilda teckens teckenkod (Unicode) kollas och evalueras med funktionerna `ord()` och `chr()`
 
 --
 
