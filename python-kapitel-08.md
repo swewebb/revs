@@ -892,6 +892,7 @@ x = ", ".join(lista)
 print(x)
 kalle, lotta, kålle, ada
 ```
+
 ---
 
 # SLUT!
