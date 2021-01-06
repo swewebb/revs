@@ -72,7 +72,7 @@ Lägg till ISO:n i **Virtual Media Manager** innan du startar datorn.
 
 Följ anvisningarna i dokumentationen som finns [https://ubuntu.com/server/docs/install/step-by-steppå](https://ubuntu.com/server/docs/install/step-by-step).
 
-Se även XYZ. TODO: x!!!
+Se även [https://youtu.be/dfH21eBHpyw](https://youtu.be/dfH21eBHpyw)
 
 --
 
