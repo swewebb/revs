@@ -12,7 +12,7 @@
 
 Alla användare i systemet har en egen hemkatalog.
 
-Återfinns i **/home**,t.ex **/home/pelle**
+Återfinns i **/home**, t.ex **/home/pelle**
 
 Det är här vi hamnar när vi loggar in.
 
@@ -80,7 +80,7 @@ Förflyttar dig in i katalogen **musik**, som återfinns i katalogen där du bef
 
 --
 
-`ls` = List ("ell-ess")
+`ls` = list directory contents ("ell-ess")
 
 --
 
@@ -115,7 +115,7 @@ Vit = fil, blå = katalog, turkos = mjuk länk
 
 --
 
-# Kombinera
+# Kombinera flera växlar
 
 `ls -Al`
 
@@ -127,7 +127,7 @@ Vit = fil, blå = katalog, turkos = mjuk länk
 
 --
 
-`pwd`
+`pwd` = print name of current/working directory
 
 ![linux05-06](images/linux-05-06.png)
 
@@ -153,6 +153,10 @@ Vit = fil, blå = katalog, turkos = mjuk länk
 
 --
 
+Ibland får inte innehållet plats på skärmen och då vi inte kan skrolla så kommer vi inte att kunna se all information. Det här kan vi lösa mha kommandona `more` eller `less`.
+
+--
+
 `more`
 
 **Enter** = hoppa fram en rad.
@@ -175,7 +179,7 @@ Med `less` kan duanvända upp/ned-pil för att förflytta dig i utdatat.
 
 --
 
-`touch`
+`touch` = change file timestamps
 
 --
 
@@ -220,19 +224,41 @@ Här kan vi bland annat se när filen senast öppnades eller modifierades.
 
 ---
 
-# Skapa kataloger
+# Skapa kataloger - TODO BILDER
 
 --
 
-Doh!
+`mkdir` = make directories
 
+--
+
+`mkdir test`
+
+Skapar en katalog där du befinner dig.
+
+--
+
+`mkdir ~/test`
+
+Skapar en katalog i din hemkatalog oavsett var du befinner dig.
+
+--
+
+```html
+mkdir -p start/del-1
+mkdir -p start/del-2
+```
+
+Skapar katalogen start(om den inte finns) för att sedan skapa katalogen del-1 i den.
+
+Skapar del-2 i mappen start (som vi skapade på raden innan).
 ---
 
 # Ta bort filer
 
 --
 
-Doh!
+`rm` = remove files or directories
 
 ---
 
@@ -240,15 +266,15 @@ Doh!
 
 --
 
-Doh!
+`rmdir` = remove empty directories
 
 ---
 
-# Kopiera
+# Kopiera filer/katalogerm
 
 --
 
-Doh!
+`cp` = copy files and directories
 
 ---
 
@@ -268,7 +294,22 @@ Doh!
 
 ---
 
+# Flytta filer/kataloger
+
+--
+
+`mv` = move (rename) files
+
+## Filer
+
+
+## Kataloger
+
+--
+
 # Döpa om filer/kataloger
+
+`mv` = move (rename) files
 
 --
 
@@ -280,7 +321,7 @@ Doh!
 
 --
 
-Doh!
+`ln` = make links between files
 
 --
 
