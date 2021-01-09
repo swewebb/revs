@@ -91,3 +91,12 @@ Se [https://www.kernel.org/doc/man-pages/](https://www.kernel.org/doc/man-pages/
 
 Med kommandot `apropos` kan man hitta kommandon.
 
+---
+
+# Filmer
+
+--
+
+**HakTip - Linux Terminal 101**
+- [How To Use Man Pages](https://www.youtube.com/watch?v=BWLSqZZfKc4)
+- [type, which, and apropos](https://www.youtube.com/watch?v=CQvkF4LHY58)
