@@ -4,21 +4,201 @@
 
 # Filsystemet
 
+--
+
+<span class="fragment">Ett filsystem i Linux är väldigt standardiserat och ser ungefär likadant i alla stora distributionerna.</span>
+
+<span class="fragment">**Filesystem Hierarchy Standard** är en standard som de flesta distributioner följer.</span>
+
+<span class="fragment">I Linux finns inga "enheter" A:, C:, osv</span>
+
+--
+
+<span class="fragment">Längst upp i filsystemet har vi roten och under den återfinns allt.</span>
+
+<span class="fragment">Tänk dig ett rotsystemet på ett träd.</span>
+
+<span class="fragment">Ett filsystem kan spänna över flera diskar/partitioner</span>
+
+<span class="fragment">Montering</span>
+
+--
+
+<span class="fragment">Ett filsystem "monteras ihop" av flera olika små filsystem.</span>
+
+<span class="fragment">En katalog i ett filsystem blir en monteringspunkt för ett annat filsystem.</span>
+
+<span class="fragment">Alla delar i filsystemet utgår från roten "/"och kataloger åtskiljs med snedstreck "/".</span>
+
+<span class="fragment">Ett exempel på ett filnamn är: **/home/pelle/filen.pdf**</span>
+
+--
+
+![linux05-38](images/linux-05-38.png)
+
+--
+
+![linux05-38](images/linux-05-39.png)
+
+--
+
+**/**
+
+Rotem av filsystemet.
+
+Under denna katalog finns allt annat.
+
+--
+
+**/bin**
+
+Binärfiler, vanliga användarkommandon.
+
+Är i Ubuntu en genväg till **/usr/bin**
+
+--
+
+**/boot**
+
+Filer för att starta systemet inkl. kärnan.
+
+--
+
+**/cdrom**
+
+Montering av optiska media.
+
+--
+
+**/dev**
+
+Enhetsfiler, ex.hårddiskar och ssd:er.
+
+--
+
+**/etc**
+
+Konfigurationsfiler för systemet och dess tjänster.
+
+--
+
+**/home**
+
+Hemkataloger för användarna.
+
+Motsvararande i Microsoft Windows = C:\Users
+
+--
+
+**/lib, /lib32, /lib64, /libx32**
+
+Biblioteksfiler för kärnan samt C-bibliotek.
+
+Är i Ubuntu en genväg till **/usr/lib** osv.
+
+--
+
+**/lost+found**
+
+Vid en krasch räddas filerna till denna katalog.
+
+--
+
+**/media**
+
+Användarmonterade enheter brukar hamna här.
+
+--
+
+**/mnt**
+
+Monteringspunkt för temporära enheter, t.ex nätverksdelningar.
+
+--
+
+**/opt**
+
+Programvaror som inte hanteras av pakethanteraren.
+
+--
+
+**/proc**
+
+Här ligger alla processer som körs i systemet.
+
+--
+
+**/root**
+
+Detta är root:s (systemadministratörens) hemkatalog.
+
+I Ubuntu är rootanv. inaktiverad.
+
+--
+
+**/run**
+
+Innehåller bland annat system pid-filer (run-time variable data).
+
+--
+
+**/sbin**
+
+Här ligger systemets exekverbara (körbara) file.
+
+Är i Ubuntu en genväg till **/usr/sbin** osv.
+
+--
+
+**/snap**
+
+Här installeras program som levereras via snap.
+
+--
+
+**/srv**
+
+Kommersiella tjänster installeras ibland här.
+
+--
+
+**/sys**
+
+Specialfiler för systemets kärna.
+
+--
+
+**/tmp**
+
+Temporära filer.
+
+--
+
+**/usr**
+
+Program och filer som oftast är tillgängliga för alla användare (users) att komma åt.
+
+--
+
+**/var**
+
+Loggfiler
+
 ---
 
 # Hemkatalog
 
 --
 
-Alla användare i systemet har en egen hemkatalog.
+<span class="fragment">Alla användare i systemet har en egen hemkatalog.</span>
 
-Återfinns i **/home**, t.ex **/home/pelle**
+<span class="fragment">Återfinns i **/home**, t.ex **/home/pelle**</span>
 
-Det är här vi hamnar när vi loggar in.
+<span class="fragment">Det är här vi hamnar när vi loggar in.</span>
 
-Förkortas **~**
+<span class="fragment">Förkortas **~**</span>
 
-Din användare äger allt i katalogen.
+<span class="fragment">Din användare äger allt i katalogen.</span>
 
 ---
 
@@ -30,7 +210,7 @@ Din användare äger allt i katalogen.
 
 --
 
-**Relativ sökväg** = utgår mappen man står i, t.ex `cd pelle`
+**Relativ sökväg** = utgår från mappen man står i, t.ex `cd pelle`
 
 ---
 
@@ -45,6 +225,7 @@ Din användare äger allt i katalogen.
 ```
 cd /etc/apt/
 ```
+
 Förflyttar dig till katalogen **/etc/apt** oavsett var i filträdet du befinner dig.
 
 --
@@ -206,7 +387,7 @@ more dump
 
 `less`
 
-Med `less` kan duanvända upp/ned-pil för att förflytta dig i utdatat.
+Med `less` kan du använda upp/ned-pil för att förflytta dig i utdatat.
 
 ---
 
@@ -238,7 +419,9 @@ Skapar tre tomma filer
 
 --
 
-`touch --date="2020-12-24 15:00:00" anka1`
+```
+touch --date="2020-12-24 15:00:00" anka1
+```
 
 ![linux05-12](images/linux-05-12.png)
 
@@ -450,11 +633,11 @@ mv fil2.md haha.md
 
 --
 
-Fungerar (nästan) som genvägarna i Microsoft Windows.
+<span class="fragment">Fungerar (nästan) som genvägarna i Microsoft Windows.</span>
 
-Tar man bort genvägen finns originalfilen kvar.
+<span class="fragment">Tar man bort genvägen finns originalfilen kvar.</span>
 
-Tar man bort originalfilen så finns genvägen kvar, men den pekar till något som inte finns.
+<span class="fragment">Tar man bort originalfilen så finns genvägen kvar, men den pekar till något som inte finns.</span>
 
 --
 
@@ -468,11 +651,11 @@ ln -s orginalet linken
 
 ![linux05-30](images/linux-05-30.png)
 
-Vi öppnar nu länken (linken) i nano och skriver in lite text för att sedan avsluta nano (givetvis sparar vi).
+<span class="fragment">Vi öppnar nu länken (linken) i nano och skriver in lite text för att sedan avsluta nano (givetvis sparar vi).</span>
 
-Om vi nu öppnar originalet ser vi att ändringen finns kvar.
+<span class="fragment">Om vi nu öppnar originalet ser vi att ändringen finns kvar.</span>
 
-**Kom ihåg!** Mjuka länkar kan ses som genvägar i Microsoft Windows.
+<span class="fragment">**Kom ihåg!** Mjuka länkar kan ses som genvägar i Microsoft Windows.</span>
 
 --
 
@@ -504,13 +687,13 @@ Aha! Nu skapas originalet igen
 
 --
 
-Hårda länkar är pekare till en fil.
+<span class="fragment">Hårda länkar är pekare till en fil.</span>
 
-Flera hårda länkar kan peka på samma fil.
+<span class="fragment">Flera hårda länkar kan peka på samma fil.</span>
 
-Filen försvinner först efter att alla hårda länkar har raderats.
+<span class="fragment">Filen försvinner först efter att alla hårda länkar har raderats.</span>
 
-Om du raderar originalfilen men inte de hårda länkarna finns de hårda länkarna kvar, liksom fildatan.
+<span class="fragment">Om du raderar originalfilen men inte de hårda länkarna finns de hårda länkarna kvar, liksom fildatan.</span>
 
 --
 
@@ -559,34 +742,20 @@ Tar vi bort originalet så kommer länken fortfarande att fungera.
 
 ---
 
-# Allting är filer (eller processer)
-
---
-
-Doh!
-
----
-
-# Visa monterade lagringsenheter
-
---
-
-Doh!
-
----
-
 # Filmer
 
 --
 
 **TIF275 Datorintroduktion, Chalmers**
-[Linux 1: Grunderna](https://www.youtube.com/watch?v=yzeY5H-8nVk)
-[Linux: Knep i terminalen](https://www.youtube.com/watch?v=V-tLqN5yp90)
+
+- [Linux 1: Grunderna](https://www.youtube.com/watch?v=yzeY5H-8nVk)
+- [Linux: Knep i terminalen](https://www.youtube.com/watch?v=V-tLqN5yp90)
 
 --
 
 **dbwebb - Blekinge Tekniska Högskola**
-[02 cat](https://www.youtube.com/watch?v=a2P26Zgy_mE)
+
+- [02 cat](https://www.youtube.com/watch?v=a2P26Zgy_mE)
 
 --
 
