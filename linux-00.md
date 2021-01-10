@@ -20,19 +20,19 @@ Definierar ett abstrakt operativsystem med alla dess grundläggande komponenter 
 
 --
 
-Är ett Unixliknande operativsystem
+<p class="fragment">Är ett Unixliknande operativsystem</p>
 
-Består enbart av fri mjukvara
+<p class="fragment">Består enbart av fri mjukvara</p>
 
-Richard Stallman, 1983
+<p class="fragment">Richard Stallman, 1983</p>
 
-Free Software Foundation, FSF
+<p class="fragment">Free Software Foundation, FSF</p>
 
-GNU = GNU's Not Unix!
+<p class="fragment">GNU = GNU's Not Unix!</p>
 
-GNU GPL (General Puplic License)
+<p class="fragment">GNU GPL (General Puplic License)</p>
 
-Det som saknades länge dock var kärnan i OS:et (Idag finns den och den heter Hurd)
+<p class="fragment">Det som saknades länge dock var kärnan i OS:et (Idag finns den och den heter Hurd)</p>
 
 --
 
