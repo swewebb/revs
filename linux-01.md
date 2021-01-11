@@ -13,9 +13,9 @@ Finns tre officiella versioner: Desktop, Server, Core (IoT)
 
 --
 
-Kommer en ny version vars jätte månad, t.ex 20.04 är släppt 2020 - april.
+Kommer en ny version var sjätte månad, t.ex 20.04 är släppt 2020 - april.
 
-Som standard är supporttidensex månader.
+Som standard är supporttiden sex månader.
 
 Med två års mellanrum släpps det en version som är LTS.
 
@@ -70,7 +70,7 @@ Lägg till ISO:n i **Virtual Media Manager** innan du startar datorn.
 
 --
 
-Följ anvisningarna i dokumentationen som finns [https://ubuntu.com/server/docs/install/step-by-steppå](https://ubuntu.com/server/docs/install/step-by-step).
+Följ anvisningarna i dokumentationen som finns [https://ubuntu.com/server/docs/install/step-by-stepp](https://ubuntu.com/server/docs/install/step-by-step).
 
 Se även [https://youtu.be/dfH21eBHpyw](https://youtu.be/dfH21eBHpyw)
 
