@@ -537,6 +537,12 @@ rmdir filer
 
 ![linux05-22](images/linux-05-22.png)
 
+--
+
+```
+rm -rf filer
+```
+
 ---
 
 # Kopiera filer/kataloger

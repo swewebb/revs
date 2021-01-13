@@ -1,5 +1,8 @@
 # SQL - KhanAcademy
 
+
+## Text till eleverna
+
 Du ska nu surfa in [https://sv.khanacademy.org/computing/computer-programming/sql/](https://sv.khanacademy.org/computing/computer-programming/sql/)
 
 När du väl är framme klickar du på **Logga in** och väljer där **Logga in med Google**.
