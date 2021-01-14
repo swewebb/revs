@@ -474,10 +474,10 @@ print(tre)
 from timeit import timeit
 
 listTime = timeit(stmt='[1,2,3,4,5,6,7,8,9,10]', number=1000000)
-tupleTime = timeit(stmt='[1,2,3,4,5,6,7,8,9,10]', number=1000000)
+tupleTime = timeit(stmt='(1,2,3,4,5,6,7,8,9,10)', number=1000000)
 
-print(listTime) # 0.07293450000000001
-print(tupleTime) # 0.0597164
+print(listTime)  # 0.0597786
+print(tupleTime) # 0.007808499999999996
 ```
 
 --
