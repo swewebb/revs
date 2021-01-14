@@ -7,7 +7,6 @@
     display: flex;
     justify-content: center;
 }
-
 ```
 
 ## Wave 2
@@ -25,9 +24,6 @@
     display: flex;
     justify-content: flex-end;
 }
-
-
-
 ```
 
 ## Wave 3
@@ -54,8 +50,6 @@
     display: flex;
     align-items: flex-end;
 }
-
-
 ```
 
 ## Wave 5
