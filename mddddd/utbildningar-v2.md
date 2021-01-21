@@ -1,13 +1,15 @@
 # Förslag på utbildningar
-Här har vi plockat ut ett antal intressanta utbildningar. Givetvis finns det ännu fler utbildningar, men det är upp till dig att via [https://www.antagning.se/se/start](https://www.antagning.se/se/start) leta upp dessa.
+Här har jag plockat ut ett antal intressanta utbildningar. Givetvis finns det ännu fler utbildningar, men det är upp till dig att via [https://www.antagning.se/se/start](https://www.antagning.se/se/start) eller [https://www.yrkeshogskolan.se/hitta-utbildning/sok/?area=data](https://www.yrkeshogskolan.se/hitta-utbildning/sok/?area=data) leta upp dessa.
 
-På [http://statistik.uhr.se](http://statistik.uhr.se) kan du även finna antagningsstatistik för de olika utbildningarn, men kom ihåg att statistiken säger inget om hur det kommer att bli i framtiden, utan i bara hur det har sett ut tidigare.
+På [http://statistik.uhr.se](http://statistik.uhr.se) kan du även finna antagningsstatistik för de olika utbildningarna, men kom ihåg att statistiken säger inget om hur det kommer att bli i framtiden, utan bara hur det har sett ut tidigare.
 
-Observera att det kan förekomma att Tryckfels-Nisse har varit framme... Finner du något som inte stämmer så hojta till så fixar vi felet!
+Hittar du någon utbildning som du tycker saknas så hojta till så lägger jag in den.
+
+Observera att det kan förekomma att _Tryckfels-Nisse_ har varit framme... Finner du något som inte stämmer så hojta till så fixar jag felet! 
 
 ## Yrkeshögskolor
 
-Det finns en hel drös med bra YH-utbildningar… istället för att lista dem här så besök webblatsen [https://www.yrkeshogskolan.se/hitta-utbildning/sok/?area=data](https://www.yrkeshogskolan.se/hitta-utbildning/sok/?area=data) för att finna dessa.
+Det finns en hel drös med bra YH-utbildningar, istället för att lista dem här så besök webblatsen [https://www.yrkeshogskolan.se/hitta-utbildning/sok/?area=data](https://www.yrkeshogskolan.se/hitta-utbildning/sok/?area=data) för att finna dessa.
 
 Ett par tips:
 - Frontend
@@ -17,7 +19,7 @@ Ett par tips:
 - Moln- och virtualiseringsspecialist
 - Server- och virtualiseringsspecialist
 
-Idag (2021-01-07) finns 110 olika utbildningar inom vårt område, allt ifrån webb, it- och nätverk till klassiska programmerare och spelutveckling.
+Idag (2021-01-20) finns 163 olika utbildningar inom vårt område, allt ifrån webb, it- och nätverk till klassiska programmerare och spelutveckling.
 
 ## Högskola/universitet
 
@@ -31,7 +33,7 @@ Idag (2021-01-07) finns 110 olika utbildningar inom vårt område, allt ifrån w
 - _Behörighet:_ Grundläggande behörighet + MA2
 - _URL:_ [https://www.ltu.se/edu/program/THDNG/](https://www.ltu.se/edu/program/THDNG/)
 
-**Datornätverk och datakommunikation (med möjlighet till 180hp)**
+**Datornätverk och datakommunikation (med möjlighet till 180hp <span class="ing">(hög.ing)</span>)**
 - _Skola:_ Mälardalens högskola
 - _Studieort:_ Västerås
 - _Behörighet:_ Grundläggande behörighet + MA3
@@ -42,12 +44,6 @@ Idag (2021-01-07) finns 110 olika utbildningar inom vårt område, allt ifrån w
 - _Studieort:_ Kristianstad
 - _Behörighet:_ Grundläggande behörighet
 - _URL:_ [https://www.hkr.se/program/TGDT1](https://www.hkr.se/program/TGDT1)
-
-**Nätverksdrift**
-- _Skola:_ Mittuniversitetet
-- _Studieort:_ Sundsval
-- _Behörighet:_ Grundläggande behörighet
-- _URL:_ [https://www.miun.se/natverksdrift](https://www.miun.se/natverksdrift)
 
 **Nätverksteknik med IT-säkerhet**
 - _Skola:_ Högskolan Väst
@@ -91,7 +87,7 @@ Idag (2021-01-07) finns 110 olika utbildningar inom vårt område, allt ifrån w
 **Högskoleingenjör i IT-säkerhet**
 - _Skola:_ Blekinge tekniska högskola
 - _Studieort:_ Karlskrona
-- _Behörighet:_ Grundläggande behörighet + MA3 + <span class="extra">FY2</span>
+- _Behörighet:_ Grundläggande behörighet + KE1 + MA3 + <span class="extra">FY2</span>
 - _URL:_ [https://www.bth.se/utbildning/program/dvghi/](https://www.bth.se/utbildning/program/dvghi/)
 
 
