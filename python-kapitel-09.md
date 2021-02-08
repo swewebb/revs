@@ -20,7 +20,9 @@ strukturerar upp sin kod för att få bitar som är återanvändbara</span>
 
 # Exempel på en funktion
 
+
 --
+
 
 ```python
 # Exempel på en funktion med två parametrar
@@ -132,7 +134,7 @@ help(medelvarde)
 
 ```html
 medelvarde(x, y)
-    Returnerar medelvõrdet av parametrarna x och y
+    Returnerar medelvärdet av parametrarna x och y
 ```
 
 --
