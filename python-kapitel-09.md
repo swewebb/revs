@@ -16,9 +16,11 @@ strukturerar upp sin kod för att få bitar som är återanvändbara</span>
 
 <span class="fragment">Nu ska vi göra egna funktioner</span>
 
---
+---
 
 # Exempel på en funktion
+
+--
 
 ```python
 # Exempel på en funktion med två parametrar
@@ -31,27 +33,32 @@ a = 3
 b = 4
 skriv_summa(a, b)
 ```
+
 --
 
-En funktion skapas genom att man definierar den med **namn**, **parametrar** inom parentes, och **kolon**.
+<span class="fragment">En funktion skapas genom att man definierar den med **namn**, **parametrar** inom parentes, och **kolon**.</span>
 
-Det följande programblocket (indenterat precis som vanligt efter ett kolon) tillhör funktionen.
+<span class="fragment">Det följande programblocket (indenterat precis som vanligt efter ett kolon) tillhör funktionen.</span>
 
-Sedan skriver vi vårt huvudprogram precis som vanligt, och anropar där vår nya funktion med argument.
+<span class="fragment">Sedan skriver vi vårt huvudprogram precis som vanligt, och anropar där vår nya funktion med argument.</span>
+
+--
 
 ## Vad händer i anropet?
 
-Parametrarna **x**, **y** och variabeln **summa** är lokala i funktionen och kan inte ses utanför funktionen.
+<span class="fragment">Parametrarna **x**, **y** och variabeln **summa** är lokala i funktionen och kan inte ses utanför funktionen.</span>
 
-Värdet av argumenten i funktionsanropet kopieras till parametrarna.
+<span class="fragment">Värdet av argumenten i funktionsanropet kopieras till parametrarna.</span>
 
-Funktionen exekveras.
+<span class="fragment">Funktionen exekveras.</span>
 
-När anropet avslutats fortsätter programmet efter funktionsanropet.
+<span class="fragment">När anropet avslutats fortsätter programmet efter funktionsanropet.</span>
 
 ---
 
 # Defaultvärden på parametrarna
+
+--
 
 ```python
 # Exempel på en funktion med två parametrar
@@ -69,11 +76,11 @@ skriv_summa(b)
 
 --
 
-Det finns ibland anledning att utlämna vissa parametrar som oftast antar ett specifikt värde.
+<span class="fragment">Det finns ibland anledning att utlämna vissa parametrar som oftast antar ett specifikt värde.</span>
 
-Den möjligheten kan man ange i parameterlistan genom att sätta ett visst default-värde på en parameter.
+<span class="fragment">Den möjligheten kan man ange i parameterlistan genom att sätta ett visst default-värde på en parameter.</span>
 
-De parametrar som kan ha default-värde måste ligga längst till höger i listan, annars vet inte Pyhton vilken man har angett och vilka som ska få default-värden.
+<span class="fragment">De parametrar som kan ha default-värde måste ligga längst till höger i listan, annars vet inte Pyhton vilken man har angett och vilka som ska få default-värden.</span>
 
 ---
 
@@ -150,11 +157,11 @@ print('Medelvärdet är:', m)
 
 --
 
-Argumentvärden som skickas in till funktioner kopieras till minnesstacken och är synliga endast inne i funktionerna.
+<span class="fragment">Argumentvärden som skickas in till funktioner kopieras till minnesstacken och är synliga endast inne i funktionerna.</span>
 
-När funktionen avslutas frigörs minnet.
+<span class="fragment">När funktionen avslutas frigörs minnet.</span>
 
-Variabler som definieras utanför alla funktioner är dock globala, och syns överallt så länge ingen lokal variabel har samma namn och "skymmer sikten".
+<span class="fragment">Variabler som definieras utanför alla funktioner är dock globala, och syns överallt så länge ingen lokal variabel har samma namn och "skymmer sikten".</span>
 
 --
 
@@ -205,15 +212,15 @@ Vill man tilldela en global variabel inne i en funktion måste man deklarera den
 
 --
 
-Python distribueras med en stor mängd färdigskrivna funktioner och definierade konstanter.
+<span class="fragment">Python distribueras med en stor mängd färdigskrivna funktioner och definierade konstanter.</span>
 
-Dessa finns samlade i moduler som kan läggas till efter eget behag med hjälp av instruktionen `import`.
+<span class="fragment">Dessa finns samlade i moduler som kan läggas till efter eget behag med hjälp av instruktionen `import`.</span>
 
-Exempelvis ligger en massa matematiska funktioner och konstanter i modulen **math.py**.
+<span class="fragment">Exempelvis ligger en massa matematiska funktioner och konstanter i modulen **math.py**.</span>
 
-Vid importen skriver man dock endast `import math`.
+<span class="fragment">Vid importen skriver man dock endast `import math`.</span>
 
-Vid användning skriver man **modulnamn.funktionsnamn**.
+<span class="fragment">Vid användning skriver man **modulnamn.funktionsnamn**.</span>
 
 --
 
@@ -291,5 +298,3 @@ FUNCTIONS
 ---
 
 # SLUT
-
----
