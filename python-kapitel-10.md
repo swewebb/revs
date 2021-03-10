@@ -220,12 +220,33 @@ print(r)
 
 --
 
-Blandar sekvensen x på plats. Extra parameterna kan vara en slumptalsfunktion (default är random()).
+Blandar sekvensen _x_ på plats. 
 
 --
 
 ```python
-x
+from random import shuffle
+
+listan = [7, 65, 5, 42, 45, 12]
+shuffle(listan)
+print(listan)
+
+[12, 45, 42, 7, 65, 5]
+```
+
+--
+
+```python
+from random import shuffle
+
+listan = [7, 65, 5, 42, 45, 12]
+
+slumpad = listan.copy()
+shuffle(slumpad)
+print(listan, slumpad, sep="\n")
+
+[7, 65, 5, 42, 45, 12]
+[45, 12, 65, 7, 42, 5]
 ```
 
 ---
@@ -239,7 +260,13 @@ Drar slumpmässigt _k_ st element ur en population.
 --
 
 ```python
-x
+from random import sample
+
+listan = ['Kalle', 'Ada', 'Pelle', 'Marie', 'Elin', 'Olle']
+
+val = sample(listan, k=2)
+
+print(val)
 ```
 
 ---
@@ -253,7 +280,51 @@ Läs av och sätt generatorns "tillstånd" för att kunna återupprepa en viss s
 --
 
 ```python
-x
+from random import getstate, random, setstate
+
+state = getstate()
+
+r1 = random()
+r2 = random()
+
+print(r1, r2, sep='\n')
+
+#setstate(state)
+
+r1 = random()
+r2 = random()
+
+print(r1, r2, sep='\n')
+
+0.6089971386840282
+0.8501426052332153
+0.3275715753540863
+0.7877835005292809
+
 ```
 
----
+--
+
+```python
+from random import getstate, random, setstate
+
+state = getstate()
+
+r1 = random()
+r2 = random()
+
+print(r1, r2, sep='\n')
+
+setstate(state)
+
+r1 = random()
+r2 = random()
+
+print(r1, r2, sep='\n')
+
+0.9746084144708325
+0.9100866238071204
+0.9746084144708325
+0.9100866238071204
+
+```
