@@ -370,62 +370,724 @@ Varje par av nyckel-värde kallas för en **post** eller **item**.
 
 Istället för hakparenteser används "måsvingar" { } och kolon när dictionariet definieras, men hakparenteser används så snart vi gör indexeringar i det:
 
-```python
-dict = { nyckel_1:värde_1, nyckel_2:värde_2, nyckel_3:värde_3, … , nyckel_n:värde_n }
+---
 
-print(dict[nyckel_i]) # Skriver ut värde_i
+# Skapa en ordbok
+
+--
+
+```python
+skateboard = {
+  "brand": "Creature",
+  "model": "Martinez Calavera",
+  "width": 8.99,
+  "length": 32.64
+}
+print(skateboard)
 ```
 
---
-
-Dictionaries är uppbyggd med hashkodning för snabbhet, och därför sparas inte elementen alltid i den ordning vi skrev dem och är inte heller sorterade på nyckelvärdena.
-
---
-
-Nya värden läggs till och gamla värden ändras genom att ange en (ny) nyckel och ett nytt värde:
-
 ```python
-dict[ny_nyckel] = nytt_varde
-```
-
---
-
-Värde i tas bort med...
-
-```python
-del(dict[nyckel_i])
+{'brand': 'Creature', 'model': 'Martinez Calavera', 'width': 8.99, 'length': 32.64}
 ```
 
 ---
 
-# Exempel 1
+# Hämta ut data
 
 --
 
-Doh!
+```python
+skateboard = {
+  "brand": "Creature",
+  "model": "Martinez Calavera",
+  "width": 8.99,
+  "length": 32.64
+}
 
----
+x = skateboard["brand"]
+print(x)
+```
 
-# Exempel 2
-
---
-
-Doh!
-
----
-
-# Exempel 3
-
---
-
-Doh!
-
----
-
-# Exempel 4
+```python
+Creature
+```
 
 --
 
-Doh!
+```python
+skateboard = {
+  "brand": "Creature",
+  "model": "Martinez Calavera",
+  "width": 8.99,
+  "length": 32.64
+}
+x = skateboard.get("brand")
+print(x)
+```
+
+```python
+Creature
+```
+
+--
+
+```python
+skateboard = {
+  "brand": "Creature",
+  "model": "Martinez Calavera",
+  "width": 8.99,
+  "length": 32.64
+}
+
+x = skateboard.keys()
+print(x)
+```
+
+```python
+dict_keys(['brand', 'model', 'width', 'length'])
+```
+
+--
+
+```python
+skateboard = {
+  "brand": "Creature",
+  "model": "Martinez Calavera",
+  "width": 8.99,
+  "length": 32.64
+}
+
+x = skateboard.values()
+print(x)
+```
+
+```python
+dict_values(['Creature', 'Martinez Calavera', 8.99, 32.64])
+```
+
+--
+
+```python
+skateboard = {
+  "brand": "Creature",
+  "model": "Martinez Calavera",
+  "width": 8.99,
+  "length": 32.64
+}
+
+x = skateboard.items()
+print(x)
+```
+
+```python
+dict_items([('brand', 'Creature'), ('model', 'Martinez Calavera'), ('width', 8.99), ('length', 32.64)])
+```
+
+--
+
+```python
+skateboard = {
+  "brand": "Creature",
+  "model": "Martinez Calavera",
+  "width": 8.99,
+  "length": 32.64
+}
+
+
+if "model" in skateboard:
+    print("Jo")
+```
+
+```python
+Jo
+```
 
 ---
+
+# Ändra
+
+--
+
+```python
+skateboard = {
+  "brand": "Creature",
+  "model": "Martinez Calavera",
+  "width": 8.99,
+  "length": 3.64
+}
+
+skateboard["length"] = 32.64
+print(skateboard)
+```
+
+```python
+{'brand': 'Creature', 'model': 'Martinez Calavera', 'width': 8.99, 'length': 32.64}
+```
+
+--
+
+```python
+skateboard = {
+  "brand": "Creature",
+  "model": "Martinez Calavera",
+  "width": 8.99,
+  "length": 3.64
+}
+
+skateboard.update({"length": 32.64})
+print(skateboard)
+```
+
+```python
+{'brand': 'Creature', 'model': 'Martinez Calavera', 'width': 8.99, 'length': 32.64}
+```
+
+---
+
+# Lägga till
+
+--
+
+```python
+skateboard = {
+  "brand": "Creature",
+  "model": "Martinez Calavera",
+  "width": 8.99,
+  "length": 32.64
+}
+
+skateboard["wheelbase"] = 14.25
+print(skateboard)
+```
+
+```python
+{'brand': 'Creature', 'model': 'Martinez Calavera', 'width': 8.99, 'length': 3.64, 'wheelbase': 14.25}
+```
+
+--
+
+```python
+skateboard = {
+  "brand": "Creature",
+  "model": "Martinez Calavera",
+  "width": 8.99,
+  "length": 32.64
+}
+
+skateboard.update({"wheelbase": 14.25})
+print(skateboard)
+```
+
+```python
+{'brand': 'Creature', 'model': 'Martinez Calavera', 'width': 8.99, 'length': 3.64, 'wheelbase': 14.25}
+```
+
+---
+
+# Ta bort
+
+--
+
+```python
+skateboard = {
+  "brand": "Creature",
+  "kaka": "jepp",
+  "model": "Martinez Calavera",
+  "width": 8.99,
+  "length": 32.64
+}
+
+skateboard.pop("kaka")
+print(skateboard)
+```
+
+```python
+{'brand': 'Creature', 'model': 'Martinez Calavera', 'width': 8.99, 'length': 3.64}
+```
+
+--
+
+```python
+skateboard = {
+  "brand": "Creature",
+  "model": "Martinez Calavera",
+  "width": 8.99,
+  "length": 32.64
+}
+
+skateboard.popitem()
+print(skateboard)
+```
+
+```python
+{'brand': 'Creature', 'model': 'Martinez Calavera', 'width': 8.99}
+```
+
+--
+
+```python
+skateboard = {
+  "brand": "Creature",
+  "model": "Martinez Calavera",
+  "kaka": "jepp",
+  "width": 8.99,
+  "length": 32.64
+}
+
+del skateboard["kaka"]
+print(skateboard)
+```
+
+```python
+{'brand': 'Creature', 'model': 'Martinez Calavera', 'width': 8.99, 'length': 32.64}
+```
+
+--
+
+```python
+skateboard = {
+  "brand": "Creature",
+  "model": "Martinez Calavera",
+  "kaka": "jepp",
+  "width": 8.99,
+  "length": 32.64
+}
+
+del skateboard
+print(skateboard)
+```
+
+```python
+Traceback (most recent call last):
+  File "demo.py", line 10, in <module>
+    print(skateboard)
+NameError: name 'skateboard' is not defined
+```
+
+--
+
+```python
+skateboard = {
+  "brand": "Creature",
+  "model": "Martinez Calavera",
+  "kaka": "jepp",
+  "width": 8.99,
+  "length": 32.64
+}
+
+skateboard.clear()
+print(skateboard)
+```
+
+```python
+{}
+```
+
+---
+
+# Loopa
+
+--
+
+```python
+skateboard = {
+  "brand": "Creature",
+  "model": "Martinez Calavera",
+  "width": 8.99,
+  "length": 32.64
+}
+
+for x in skateboard:
+    print(x)
+```
+
+```python
+brand
+model
+width
+length
+```
+
+--
+
+```python
+skateboard = {
+  "brand": "Creature",
+  "model": "Martinez Calavera",
+  "width": 8.99,
+  "length": 32.64
+}
+
+for x in skateboard.keys():
+    print(x)
+
+```
+
+```python
+brand
+model
+width
+length
+```
+
+--
+
+```python
+skateboard = {
+  "brand": "Creature",
+  "model": "Martinez Calavera",
+  "width": 8.99,
+  "length": 32.64
+}
+
+for x in skateboard:
+    y = skateboard[x]
+    print(y)
+```
+
+```python
+Creature
+Martinez Calavera
+8.99
+32.64
+```
+
+--
+
+```python
+skateboard = {
+  "brand": "Creature",
+  "model": "Martinez Calavera",
+  "width": 8.99,
+  "length": 32.64
+}
+
+for x in skateboard:
+    y = skateboard.get(x)
+    print(y)
+```
+
+```python
+Creature
+Martinez Calavera
+8.99
+32.64
+```
+
+--
+
+```python
+skateboard = {
+  "brand": "Creature",
+  "model": "Martinez Calavera",
+  "width": 8.99,
+  "length": 32.64
+}
+
+for x in skateboard.values():
+    print(x)
+```
+
+```python
+Creature
+Martinez Calavera
+8.99
+32.64
+```
+
+--
+
+```python
+skateboard = {
+  "brand": "Creature",
+  "model": "Martinez Calavera",
+  "width": 8.99,
+  "length": 32.64
+}
+
+for key, value in skateboard.items():
+    print(key, value, sep=": ")
+```
+
+```python
+brand: Creature
+model: Martinez Calavera
+width: 8.99
+length: 32.64
+```
+
+---
+
+# Kopiera
+
+--
+
+```python
+skateboard = {
+  "brand": "Creature",
+  "model": "Martinez Calavera",
+  "width": 8.99,
+  "length": 32.64
+}
+
+kopia = skateboard.copy()
+print(kopia)
+```
+
+```python
+{'brand': 'Creature', 'model': 'Martinez Calavera', 'width': 8.99, 'length': 32.64}
+```
+
+--
+
+```python
+skateboard = {
+  "brand": "Creature",
+  "model": "Martinez Calavera",
+  "width": 8.99,
+  "length": 32.64
+}
+
+kopia = dict(skateboard)
+print(kopia)
+```
+
+```python
+{'brand': 'Creature', 'model': 'Martinez Calavera', 'width': 8.99, 'length': 32.64}
+```
+
+---
+
+# Nästlade
+
+--
+
+```python
+skateboards = {
+    "board1": {"brand": "Creature",
+               "model": "Martinez Calavera",
+               "width": 8.99,
+               "length": 32.64},
+    "board2": {"brand": "Prime Heritage",
+               "model": "Dune Curb Crusher",
+               "width": 8.25,
+               "length": 31.75},
+}
+
+print(skateboards)
+```
+
+```python
+{'board1': {'brand': 'Creature', 'model': 'Martinez Calavera', 'width': 8.99, 'length': 32.64}, 'board2': {'brand': 'Prime Heritage', 'model': 'Dune Curb Crusher', 'width': 8.25, 'length': 31.75}}
+```
+
+--
+
+```python
+skateboards = {
+    "board1": {"brand": "Creature",
+               "model": "Martinez Calavera",
+               "width": 8.99,
+               "length": 32.64},
+    "board2": {"brand": "Prime Heritage",
+               "model": "Dune Curb Crusher",
+               "width": 8.25,
+               "length": 31.75},
+}
+
+x = skateboards["board1"]
+print(x)
+```
+
+```python
+{'brand': 'Creature', 'model': 'Martinez Calavera', 'width': 8.99, 'length': 32.64}
+```
+
+--
+
+```python
+skateboards = {
+    "board1": {"brand": "Creature",
+               "model": "Martinez Calavera",
+               "width": 8.99,
+               "length": 32.64},
+    "board2": {"brand": "Prime Heritage",
+               "model": "Dune Curb Crusher",
+               "width": 8.25,
+               "length": 31.75},
+}
+
+x = skateboards["board1"]["model"]
+print(x)
+```
+
+```python
+Martinez Calavera
+```
+
+--
+
+```python
+skateboards = {
+    "board1": {"brand": "Creature",
+               "model": "Martinez Calavera",
+               "width": 8.99,
+               "length": 32.64},
+    "board2": {"brand": "Prime Heritage",
+               "model": "Dune Curb Crusher",
+               "width": 8.25,
+               "length": 31.75},
+}
+
+skateboards["board3"] = {
+    "brand": "Tired",
+    "model": "Logo Two on Chuck",
+    "width": 8.625,
+    "length": 32.00
+}
+
+print(skateboards)
+```
+
+```python
+{'board1': {'brand': 'Creature', 'model': 'Martinez Calavera', 'width': 8.99, 'length': 32.64}, 'board2': {'brand': 'Prime Heritage', 'model': 'Dune Curb Crusher', 'width': 8.25, 'length': 31.75}, 'board3': {'brand': 'Tired', 'model': 'Logo Two on Chuck', 'width': 8.625, 'length': 32.0}}
+```
+
+--
+
+```python
+skateboards = {
+    "board1": {"brand": "Creature",
+               "model": "Martinez Calavera",
+               "width": 8.99,
+               "length": 32.64},
+    "board2": {"brand": "Prime Heritage",
+               "model": "Dune Curb Crusher",
+               "width": 8.25,
+               "length": 31.75},
+}
+
+skateboards["board3"] = {}
+skateboards["board3"]["brand"] = "Tired"
+skateboards["board3"]["model"] = "Logo Two on Chuck",
+skateboards["board3"]["width"] =  8.625,
+skateboards["board3"]["length"] = 32.00
+
+print(skateboards)
+```
+
+```python
+{'board1': {'brand': 'Creature', 'model': 'Martinez Calavera', 'width': 8.99, 'length': 32.64}, 'board2': {'brand': 'Prime Heritage', 'model': 'Dune Curb Crusher', 'width': 8.25, 'length': 31.75}, 'board3': {'brand': 'Tired', 'model': 'Logo Two on Chuck', 'width': 8.625, 'length': 32.0}}
+```
+
+--
+
+```python
+skateboards = {
+    "board1": {"brand": "Creature",
+               "model": "Martinez Calavera",
+               "width": 8.99,
+               "length": 32.64},
+    "board2": {"brand": "Prime Heritage",
+               "model": "Dune Curb Crusher",
+               "width": 8.25,
+               "length": 31.75},
+}
+
+del skateboards["board2"]
+
+print(skateboards)
+```
+
+```python
+{'board1': {'brand': 'Creature', 'model': 'Martinez Calavera', 'width': 8.99, 'length': 32.64}}
+```
+
+--
+
+```python
+skateboards = {
+    "board1": {"brand": "Creature",
+               "model": "Martinez Calavera",
+               "width": 8.99,
+               "length": 32.64},
+    "board2": {"brand": "Prime Heritage",
+               "model": "Dune Curb Crusher",
+               "kaka": "jepp",
+               "width": 8.25,
+               "length": 31.75},
+}
+
+del skateboards["board2"]["kaka"]
+
+print(skateboards)
+```
+
+```python
+{'board1': {'brand': 'Creature', 'model': 'Martinez Calavera', 'width': 8.99, 'length': 32.64}, 'board2': {'brand': 'Prime Heritage', 'model': 'Dune Curb Crusher', 'width': 8.25, 'length': 31.75}}
+```
+
+--
+
+```python
+skateboards = {
+    "board1": {"brand": "Creature",
+               "model": "Martinez Calavera",
+               "width": 8.99,
+               "length": 32.64},
+    "board2": {"brand": "Prime Heritage",
+               "model": "Dune Curb Crusher",
+               "width": 8.25,
+               "length": 31.75},
+}
+
+for board, info in skateboards.items():
+    print(board, info)
+```
+
+```python
+board1 {'brand': 'Creature', 'model': 'Martinez Calavera', 'width': 8.99, 'length': 32.64}
+board2 {'brand': 'Prime Heritage', 'model': 'Dune Curb Crusher', 'width': 8.25, 'length': 31.75}
+```
+
+--
+
+```python
+skateboards = {
+    "board1": {"brand": "Creature",
+               "model": "Martinez Calavera",
+               "width": 8.99,
+               "length": 32.64},
+    "board2": {"brand": "Prime Heritage",
+               "model": "Dune Curb Crusher",
+               "width": 8.25,
+               "length": 31.75},
+}
+
+for board, info in skateboards.items():
+    print(board)
+    for detail, value in info.items():
+        print("   ", detail,": ", value)
+    print('------------------')
+```
+
+--
+
+```python
+board1
+    brand :  Creature
+    model :  Martinez Calavera
+    width :  8.99
+    length :  32.64
+------------------
+board2
+    brand :  Prime Heritage
+    model :  Dune Curb Crusher
+    width :  8.25
+    length :  31.75
+------------------
+```
+
+---
+
+# Slut!
