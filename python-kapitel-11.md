@@ -287,6 +287,28 @@ except ValueError as e:
 x ska inte vara mindre än 10
 ```
 
+--
+
+```python
+try:
+    x = 10/5
+    print(x)
+except:
+    pass
+```
+
+```
+2
+```
+
+```python
+try:
+    x = 10/0
+    print(x)
+except:
+    pass
+```
+
 ---
 
 # Definition av egna feltyper
