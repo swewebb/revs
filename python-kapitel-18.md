@@ -55,7 +55,7 @@ Cliff-Cåre Claesson
 
 ```python
 f = open('./fil.txt', encoding = 'UTF-8')
-text = (f.read())
+text = f.read()
 f.close()
 
 print(text)
